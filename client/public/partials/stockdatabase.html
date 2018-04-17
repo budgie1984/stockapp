@@ -1,0 +1,33 @@
+
+
+
+    <h1 class="well" align="center">Stocks in Database</h1>
+        
+    
+    <div class="well">  
+  
+  
+            
+                      
+        
+                      
+                        <ul  class="stocks">
+                            <li ng-repeat="stock in stocks">
+                            <!-- <img src="./img/stock.png" width="50" height="50" class="pull-left">  -->
+
+                                    <b>    Stock Exchange Name:</b>  {{stock.exchangeName}} , 
+                                    <b>    Source:</b>  {{stock.source}} , 
+                                    <b>    Company:</b>  {{stock.company}} , 
+                                    <b>    Symbol:</b>  {{stock.symbol}},
+                                    <b>    Price:</b>  {{stock.price}},
+                                    <b>    Change:</b>  {{stock.change}},
+                                    <b>    Price Change:</b>  {{stock.priceChange}},
+                                    
+                                    <button class="btn btn-xs pull-right btn-primary" ng-click="viewStock(stock)">Info</button>
+                                  <button class="btn btn-xs pull-right btn-danger" ng-click="deleteStock(stock)">Delete</button>
+
+                            </li>
+                          </ul>
+     </div>
+           
+                 

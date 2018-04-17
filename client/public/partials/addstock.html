@@ -1,0 +1,39 @@
+   
+
+     <!--start container add stock -->
+     <div class="container" >
+        <h1 class="well">Add stocks to the database</h1>
+        <div class="col-sm-12 well">
+          <div class="row">
+
+                            <form class="form">
+                           <div class="form-group">
+                            <label>Stock Exchange Name </label>
+                            <input type="text" class="form-control" placeholder="Enter stock exchange name" ng-model="stock.exchangeName">
+                            <label>Source</label>
+                            <input type="text" class="form-control" placeholder="Enter Source" ng-model="stock.source">
+                            <label>Company</label>
+                            <input type="text" class="form-control" placeholder="Enter Company" ng-model="stock.company">
+                            <label>Symbol</label>
+                            <input type="text" class="form-control" placeholder="Enter Symbol" ng-model="stock.symbol">
+                            <label>Price</label>
+                            <input type="text" class="form-control" placeholder="Enter Price" ng-model="stock.price">
+                            <label>Change</label>
+                            <input type="text" class="form-control" placeholder="Enter Change" ng-model="stock.change">
+                            <label>Price Change</label>
+                            <input type="text" class="form-control" placeholder="Enter Price Change" ng-model="stock.priceChange">
+                          
+                      
+                                <button type="submit" class="btn pull-right btn-primary" ng-click="addStock(stock)">Add stock</button>
+                    </div>
+                  </form>
+                </div>
+           
+
+          </div>
+        </div>
+      </div> <!-- end container add stock -->
+       
+
+
+  

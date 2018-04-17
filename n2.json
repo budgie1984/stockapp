@@ -1,0 +1,75 @@
+ 
+{
+  "n": 2,
+  "currency_rates": {
+    "euro": {
+      "dollar": 1.1,
+      "sterling": 0.8
+    }
+  },
+  "ise": {
+    "exchange": "ise",
+    "currency": "euro",
+    "source": "http://www.davy.ie",
+    "time": "2018-01-12T21:35:16.730Z",
+    "cached": false,
+    "details": "http://www.davy.ie/markets-and-share-prices/iseq/detail?ric=",
+    "data": [
+      {
+        "company": "AIB GROUP PLC",
+        "symbol": "AIBG_I",
+        "price": "4.50",
+        "change": "-0.50",
+        "pChg": "-10.00%"
+      },
+      {
+        "company": "BK IRE GRP PLC",
+        "symbol": "BIRG_I",
+        "price": "3.60",
+        "change": "-0.40",
+        "pChg": "-10.00%"
+      },
+      {
+        "company": "CRH PLC",
+        "symbol": "CRH_I",
+        "price": "27.00",
+        "change": "-3.00",
+        "pChg": "-10.00%"
+      }
+    ]
+  },
+  "ftse350": {
+    "exchange": "ftse350",
+    "currency": "sterling",
+    "source": "http://shares.telegraph.co.uk",
+    "time": "2018-01-12T21:59:11.944Z",
+    "cached": false,
+    "details": "http://shares.telegraph.co.uk",
+    "data": [
+      {
+        "company": "Tesco",
+        "symbol": "TSCO",
+        "price": "4.05",
+        "change": "-0.45",
+        "pChg": "-10.00%"
+      }
+    ]
+  },
+  "coinranking": {
+    "exchange": "coinranking",
+    "currency": "dollar",
+    "source": "https://coinranking.com",
+    "time": "2018-01-12T22:10:05.247Z",
+    "cached": false,
+    "details": "https://coinranking.com/coin",
+    "data": [
+      {
+        "company": "Ripple",
+        "symbol": "ripple-xrp",
+        "price": "1.80",
+        "change": "-0.20",
+        "pChg": "-10.00%"
+      }
+    ]
+  }
+}
