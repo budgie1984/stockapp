@@ -1,19 +1,118 @@
 
 
 
-    <h1 class="well" align="center">Stocks in Database</h1>
+    <!-- <h1 id="stockbanner" class="well" align="center">Stocks in Database</h1> -->
         
     
-    <div class="well">  
   
+    <!-- <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Description</th>
+          <th>Exc</th>
+          <th>Symbol</th>
+          <th>Date In</th>
+          <th>Date Out</th>
+          <th>Qty</th>
+          <th>Total Qty</th>
+          <th>Cost</th>
+          <th>Purchase<br>Price</th>
+          <th>Live Price</th>
+          <th>Value</th>
+          <th>Gain/Loss</th>
+          <th>Total Gain/Loss</th>
+          <th>% Gain/Loss</th>
+          <th>Sell Costs</th>
+        </tr>
+      </thead>
+      <tbody >
+        <tr ng-repeat="m in motha">
+          <td>  <button class="btn btn-xs pull-left btn-danger" 
+                ng-click="deleteStock(stock)" onClick="window.location.reload()">Delete</button> </td>
+          <td>{{}}</td>
+          <td>{{holding.stock_exchange}}</td>
+          <td>{{holding.symbol}}</td>
+          <td>{{stock.dateIn}}</td>
+          <td>{{stock.dateOut}}</td>
+          <td>{{stock.quantity}}</td>
+          <td>{{stock.totalQuantity}}</td>
+          <td>{{stock.cost}}</td>
+          <td>{{stock.purchasePrice}}</td>
+          <td>{{stock.currentPrice}}</td>
+          <td>{{stock.value}}</td>
+          <td>{{stock.gainLoss}}</td>
+          <td>{{stock.cumGainLoss}}</td>
+          <td>{{stock.percentageGainLoss}}</td>
+          <td>{{stocky.sellCosts}}</td>
+        </tr>
+      </tbody>
+    </table> -->
   
-            
-                      
+ <div class="well">           
+           
+    <h1 id="stockbanner" class="well" align="center">Stocks in Database</h1>
+  
+
+              <div id="stocklist" class="well">
+
+
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th>Description</th>
+                        <th>Exc</th>
+                        <th>Symbol</th>
+                        <th>Date In</th>
+                        <th>Date Out</th>
+                        <th>Qty</th>
+                        <th>Total Qty</th>
+                        <th>Cost</th>
+                        <th>Purchase<br>Price</th>
+                        <th>Live Price</th>
+                        <th>Value</th>
+                        <th>Gain/Loss</th>
+                        <th>Total Gain/Loss</th>
+                        <th>% Gain/Loss</th>
+                        <th>Sell Costs</th>
+                      </tr>
+                    </thead>
+                    <tbody >
+                      <tr ng-repeat="stock in stocks">
+                        <td>  <button class="btn btn-xs pull-left btn-danger" 
+                              ng-click="deleteStock(stock)" onClick="window.location.reload()">Delete</button> </td>
+                        <td>{{stock.description}}</td>
+                        <td>{{stock.exchangeName}}</td>
+                        <td>{{stock.symbol}}</td>
+                        <td>{{stock.dateIn}}</td>
+                        <td>{{stock.dateOut}}</td>
+                        <td>{{stock.quantity}}</td>
+                        <td>{{stock.totalQuantity}}</td>
+                        <td>{{stock.cost}}</td>
+                        <td>{{stock.purchasePrice}}</td>
+                        <td>{{stock.currentPrice}}</td>
+                        <td>{{stock.value}}</td>
+                        <td>{{stock.gainLoss}}</td>
+                        <td>{{stock.cumGainLoss}}</td>
+                        <td>{{stock.percentageGainLoss}}</td>
+                        <td>{{stock.sellCosts}}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+              </div>
+
+  </div>
+
+
+
+
+
         
                       
-                        <ul  class="stocks">
+                        <!-- <ul  class="stocks">
                             <li ng-repeat="stock in stocks">
-                            <!-- <img src="./img/stock.png" width="50" height="50" class="pull-left">  -->
 
                                     <b>    Stock Exchange Name:</b>  {{stock.exchangeName}} , 
                                     <b>    Source:</b>  {{stock.source}} , 
@@ -27,7 +126,7 @@
                                   <button class="btn btn-xs pull-right btn-danger" ng-click="deleteStock(stock)">Delete</button>
 
                             </li>
-                          </ul>
-     </div>
+                          </ul> -->
+   
            
                  

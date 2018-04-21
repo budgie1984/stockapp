@@ -1,0 +1,20 @@
+[
+    {
+        "date_in": "01/01/2014",
+        "date_out": "",
+        "qty": "4000",
+        "purchase_price": "3.00"
+      },
+      {
+        "date_in": "01/01/2015",
+        "date_out": "",
+        "qty": "8000",
+        "purchase_price": "2.50"
+      },
+      {
+        "date_in": "01/01/2016",
+        "date_out": "",
+        "qty": "2000",
+        "purchase_price": "4.50"
+      }
+]

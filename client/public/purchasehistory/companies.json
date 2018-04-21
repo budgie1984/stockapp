@@ -1,0 +1,34 @@
+
+
+[
+    {
+        "id": "aib",
+        "description": "AIB",
+        "stock_exchange": "ise",
+        "symbol": "AIBG.I"
+    },
+    {
+        "id": "boi",
+        "description": "Bank of Ireland",
+        "stock_exchange": "ise",
+        "symbol": "BIRG.I"
+    },
+    {
+        "id": "crh",
+        "description": "CRH",
+        "stock_exchange": "ise",
+        "symbol": "CRH.I"
+    },
+    {
+        "id": "tesco",
+        "description": "Tesco",
+        "stock_exchange": "ftse",
+        "symbol": "TSCO"
+    },
+    {
+        "id": "ripple",
+        "description": "Ripple",
+        "stock_exchange": "coinranking",
+        "symbol": "ripple-xrp"
+    }
+]

@@ -6,14 +6,20 @@ exports.createStock = function (req, res) {
     // Create a new instance of the container model
     var stock = new Stock();
     // Set the container properties that came from the POST data
+    stock.description = req.body.description;
     stock.exchangeName = req.body.exchangeName;
-    stock.source = req.body.source;
-    stock.company = req.body.company;
     stock.symbol = req.body.symbol;
+    stock.dateIn = req.body.dateIn;
+    stock.dateOut = req.body.dateOut;
+    stock.quantity = req.body.quantity;
+    stock.costs = req.body.cost;    
+    stock.purchasePrice = req.body.purchasePrice;
     stock.price = req.body.price;
-    stock.change = req.body.change;
-    stock.priceChange = req.body.priceChange;
-
+    stock.value = req.body.value;
+    stock.gainLoss = req.body.gainLoss;
+    stock.cumGainLoss = req.body.cumGainLoss;
+    stock.percentageGainLoss = req.body.percentageGainLoss;
+    stock.sellCosts = req.body.sellCosts;
 
     console.log("**** Stock to save: ", stock);
     // Save the container and check for errors
@@ -60,13 +66,21 @@ exports.deleteStock = function (req, res) {
 exports.updateStock = function(req, res) {
     console.log("ID FROM THE URL IS IN THE PARAMS OBJECT & THE BODY HAS THE NEW STOCK INFO -  params **** : ", req.params);
       Stock.findById(req.params.id, function (err, stock) {
+        stock.description = req.body.description;
         stock.exchangeName = req.body.exchangeName;
-        stock.source = req.body.source;
-        stock.company = req.body.company;
         stock.symbol = req.body.symbol;
+        stock.dateIn = req.body.dateIn;
+        stock.dateOut = req.body.dateOut;
+        stock.quantity = req.body.quantity;
+        stock.costs = req.body.cost;    
+        stock.purchasePrice = req.body.purchasePrice;
         stock.price = req.body.price;
-        stock.change = req.body.change;
-        stock.priceChange = req.body.priceChange;
+        stock.value = req.body.value;
+        stock.gainLoss = req.body.gainLoss;
+        stock.cumGainLoss = req.body.cumGainLoss;
+        stock.percentageGainLoss = req.body.percentageGainLoss;
+        stock.sellCosts = req.body.sellCosts;
+    
            stock.save(function (err) {
                if(err) { 
                   return res.json(err);

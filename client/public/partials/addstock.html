@@ -8,23 +8,36 @@
 
                             <form class="form">
                            <div class="form-group">
-                            <label>Stock Exchange Name </label>
-                            <input type="text" class="form-control" placeholder="Enter stock exchange name" ng-model="stock.exchangeName">
-                            <label>Source</label>
-                            <input type="text" class="form-control" placeholder="Enter Source" ng-model="stock.source">
-                            <label>Company</label>
-                            <input type="text" class="form-control" placeholder="Enter Company" ng-model="stock.company">
+                            <label>Stock Description </label>
+                            <input type="text" class="form-control" placeholder="Enter Stock Description" ng-model="stock.description">
+                            <label>Exchange Name </label>
+                            <input type="text" class="form-control" placeholder="Enter Stock Exchange Name" ng-model="stock.exchangeName">
                             <label>Symbol</label>
                             <input type="text" class="form-control" placeholder="Enter Symbol" ng-model="stock.symbol">
+                            <label>Date In</label>
+                            <input type="text" class="form-control" placeholder="Enter Date In" ng-model="stock.dateIn">
+                            <label>Date Out</label>
+                            <input type="text" class="form-control" placeholder="Enter Date Out" ng-model="stock.dateOut">
+                            <label>Quantity</label>
+                            <input type="text" class="form-control" placeholder="Enter Quantity" ng-model="stock.quantity">
+                            <label>Cost</label>
+                            <input type="text" class="form-control" placeholder="Enter Cost" ng-model="stock.cost">
+                            <label>Purchase Price</label>
+                            <input type="text" class="form-control" placeholder="Enter Purchase Price" ng-model="stock.purchasePrice">
                             <label>Price</label>
                             <input type="text" class="form-control" placeholder="Enter Price" ng-model="stock.price">
-                            <label>Change</label>
-                            <input type="text" class="form-control" placeholder="Enter Change" ng-model="stock.change">
-                            <label>Price Change</label>
-                            <input type="text" class="form-control" placeholder="Enter Price Change" ng-model="stock.priceChange">
-                          
-                      
-                                <button type="submit" class="btn pull-right btn-primary" ng-click="addStock(stock)">Add stock</button>
+                            <label>Value</label>
+                            <input type="text" class="form-control" placeholder="Enter Value" ng-model="stock.quantity">
+                            <label>Gain/Loss</label>
+                            <input type="text" class="form-control" placeholder="Enter Gain/Loss" ng-model="stock.gainLoss">
+                            <label>Cum Gain/Loss</label>
+                            <input type="text" class="form-control" placeholder="Enter Cum Gain/Loss" ng-model="stock.cumGainLoss">
+                            <label>% Gain/Loss</label>
+                            <input type="text" class="form-control" placeholder="Enter % Gsin/Loss" ng-model="stock.percentageGainLoss">
+                            <label>Sell Costs</label>
+                            <input type="text" class="form-control" placeholder="Enter Sell Costs" ng-model="stock.sellCosts">
+                           
+                            <button type="submit" class="btn pull-right btn-primary" ng-click="addStock(stock)">Add stock</button>
                     </div>
                   </form>
                 </div>
@@ -34,6 +47,19 @@
         </div>
       </div> <!-- end container add stock -->
        
-
+      stock.description = req.body.description;
+      stock.exchangeName = req.body.exchangeName;
+      stock.symbol = req.body.symbol;
+      stock.dateIn = req.body.dateIn;
+      stock.dateOut = req.body.dateOut;
+      stock.quantity = req.body.quantity;
+      stock.costs = req.body.cost;    
+      stock.purchasePrice = req.body.purchasePrice;
+      stock.price = req.body.price;
+      stock.value = req.body.value;
+      stock.gainLoss = req.body.gainLoss;
+      stock.cumGainLoss = req.body.cumGainLoss;
+      stock.percentageGainLoss = req.body.percentageGainLoss;
+      stock.sellCosts = req.body.sellCosts;
 
   

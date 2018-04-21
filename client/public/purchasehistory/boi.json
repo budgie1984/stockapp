@@ -1,0 +1,44 @@
+[
+    {
+        "date_in": "01/01/2012",
+        "date_out": "",
+        "qty": "1000",
+        "purchase_price": "4.00"
+      },
+      {
+        "date_in": "01/01/2013",
+        "date_out": "",
+        "qty": "2000",
+        "purchase_price": "3.50"
+      },
+      {
+        "date_in": "01/01/2014",
+        "date_out": "",
+        "qty": "3000",
+        "purchase_price": "3.00"
+      },
+      {
+        "date_in": "01/01/2015",
+        "date_out": "",
+        "qty": "1000",
+        "purchase_price": "3.50"
+      },
+      {
+        "date_in": "01/01/2016",
+        "date_out": "",
+        "qty": "2000",
+        "purchase_price": "3.50"
+      },
+      {
+        "date_in": "01/01/2017",
+        "date_out": "",
+        "qty": "3000",
+        "purchase_price": "4.00"
+      },
+      {
+        "date_in": "01/01/2018",
+        "date_out": "",
+        "qty": "4000",
+        "purchase_price": "5.50"
+      }
+]

@@ -54,7 +54,7 @@ table {
 
 
 th, td {
-  text-align: left;
+  text-align: center;
   padding: 16px;
 }
 
@@ -63,7 +63,15 @@ tr:nth-child(even) {
 }
 
 
+#stocklist{
+  background-color: black;
+  color: white;
+}
 
+#stockbanner{
+  background-color: black;
+  color: white;
+}
 
 
 
