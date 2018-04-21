@@ -37,9 +37,9 @@ var port = process.env.PORT || 3000;
 
 var db;
 
-db = 'mongodb://127.0.0.1:27017/stockdb'; //local db
+//db = 'mongodb://127.0.0.1:27017/stockdb'; //local db
 
-//db = 'mongodb://boggyb:Williamwallace1314@ds231529.mlab.com:31529/stockdb'; // mlab db
+db = 'mongodb://boggyb:Williamwallace1314@ds231529.mlab.com:31529/stockdb'; // mlab db
 
 
 app.listen(port);
