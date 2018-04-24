@@ -1,11 +1,22 @@
 
 
 
-    <!-- <h1 id="stockbanner" class="well" align="center">Stocks in Database</h1> -->
-        
-    
+    <h1 id="stockbanner" class="well" align="center">Stocks in Database</h1> 
   
-    <!-- <table class="table table-bordered">
+    <div class="dropdown">
+      <button>Button</button>
+      <div>
+        <button ng-click="reloadPage('0')" </button>
+        <button ng-click="reloadPage('1')"</button>
+        <button ng-click="reloadPage('2')"</button>
+        <button ng-click="reloadPage('3')"4</button>
+        <button ng-click="reloadPage('4')"5</button>
+          <button ng-click="reloadPage('5')"5</button></button>
+      </div>
+    </div>
+
+      
+     <table class="table table">
       <thead>
         <tr>
           <th></th>
@@ -26,30 +37,35 @@
           <th>Sell Costs</th>
         </tr>
       </thead>
-      <tbody >
-        <tr ng-repeat="m in motha">
+      <tbody>
+        <tr ng-repeat="m in mothaHolda">
           <td>  <button class="btn btn-xs pull-left btn-danger" 
                 ng-click="deleteStock(stock)" onClick="window.location.reload()">Delete</button> </td>
-          <td>{{}}</td>
-          <td>{{holding.stock_exchange}}</td>
-          <td>{{holding.symbol}}</td>
-          <td>{{stock.dateIn}}</td>
-          <td>{{stock.dateOut}}</td>
-          <td>{{stock.quantity}}</td>
-          <td>{{stock.totalQuantity}}</td>
-          <td>{{stock.cost}}</td>
-          <td>{{stock.purchasePrice}}</td>
-          <td>{{stock.currentPrice}}</td>
-          <td>{{stock.value}}</td>
-          <td>{{stock.gainLoss}}</td>
-          <td>{{stock.cumGainLoss}}</td>
-          <td>{{stock.percentageGainLoss}}</td>
-          <td>{{stocky.sellCosts}}</td>
+          <td>{{m[0]}}</td>
+          <td>{{m[1]}}</td>
+          <td>{{m[2]}}</td>
+          <td>{{m[3]}}</td>
+          <td>{{m[4]}}</td>
+          <td>{{m[5]}}</td>
+          <td>{{m[6]}}</td>
+          <td>{{m[7]}}</td>
+          <td>{{m[8]}}</td>
+          <td>{{m[9]}}</td>
+          <td>{{m[10]}}</td>
+          <td>{{m[11]}}</td>
+          <td>{{m[12]}}</td>
+          <td>{{m[13]}}</td>
+          <td>{{m[14]}}</td>
         </tr>
       </tbody>
-    </table> -->
+    </table> 
   
- <div class="well">           
+
+
+
+
+
+ <!-- <div class="well">           
            
     <h1 id="stockbanner" class="well" align="center">Stocks in Database</h1>
   
@@ -82,7 +98,9 @@
                       <tr ng-repeat="stock in stocks">
                         <td>  <button class="btn btn-xs pull-left btn-danger" 
                               ng-click="deleteStock(stock)" onClick="window.location.reload()">Delete</button> </td>
-                        <td>{{stock.description}}</td>
+               
+                        
+                              <td>{{stock.description}}</td>
                         <td>{{stock.exchangeName}}</td>
                         <td>{{stock.symbol}}</td>
                         <td>{{stock.dateIn}}</td>
@@ -103,30 +121,13 @@
 
               </div>
 
-  </div>
+  </div> -->
 
 
 
 
 
         
-                      
-                        <!-- <ul  class="stocks">
-                            <li ng-repeat="stock in stocks">
 
-                                    <b>    Stock Exchange Name:</b>  {{stock.exchangeName}} , 
-                                    <b>    Source:</b>  {{stock.source}} , 
-                                    <b>    Company:</b>  {{stock.company}} , 
-                                    <b>    Symbol:</b>  {{stock.symbol}},
-                                    <b>    Price:</b>  {{stock.price}},
-                                    <b>    Change:</b>  {{stock.change}},
-                                    <b>    Price Change:</b>  {{stock.priceChange}},
-                                    
-                                    <button class="btn btn-xs pull-right btn-primary" ng-click="viewStock(stock)">Info</button>
-                                  <button class="btn btn-xs pull-right btn-danger" ng-click="deleteStock(stock)">Delete</button>
-
-                            </li>
-                          </ul> -->
-   
            
                  
